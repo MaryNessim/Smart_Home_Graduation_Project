@@ -1,0 +1,22 @@
+/************************************************************************/
+/* Name: Led.h                                                       */
+/* Author: Mary Ehab                                                 */
+/* Version: V1.0                                                        */
+/* Usage: This file contains logical implementations of Led Module     */
+/************************************************************************/
+#ifndef LED_H_
+#define LED_H_
+
+typedef enum
+{
+	LED0=0,
+	LED1,
+	LED2
+}Led_Name_t;
+
+extern void Led_Handler(Led_Name_t Led , uint8 Level);
+extern void Led1_Toggle(void) ;
+extern void Led2_Toggle(void);
+extern void Led3_Toggle(void);
+
+#endif /* LED_H_ */
